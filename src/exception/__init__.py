@@ -9,7 +9,7 @@ def error_message_detail(error: Exception, error_detail: sys) -> str:
     :param error_detail: The sys module to access traceback details.
     :return: A formatted error message string.
     """
-    # Extract traceback details (exception information)
+    # Extract traceback details (exception information) from error (e.g valueError, ZeroDivisionError)
     _, _, exc_tb = error_detail.exc_info()
 
     # Get the file name where the exception occurred
